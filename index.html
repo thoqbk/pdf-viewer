@@ -1,0 +1,40 @@
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/lib/pdf.js"></script>
+
+<style>
+    .container {
+        width: 100%;
+    }
+    .left {
+        float: left;
+        width: 80%;
+        height: 600px;
+        overflow: auto;
+        border: 1px solid red;
+    }
+    .left canvas {
+        width: 99%;
+        margin-bottom: 10px;
+        border: 1px solid black;
+    }
+    .right {
+        float: right;
+        border: 1px solid green;
+        width: 18%;
+    }
+    .right canvas {
+        width: 99%;
+    }
+</style>
+
+<div class='container'>
+    <div class='left'></div>
+    <div class='right'>
+        <canvas id='thumbnail'></canvas>
+    </div>
+</div>
+
+
+<script src="/data.js"></script>
+
+<script src="/main.js"></script>
