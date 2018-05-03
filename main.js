@@ -25,8 +25,8 @@ loadingTask.promise.then(function(pdf) {
     console.error(reason);
 });
 
-var renderPage = function(page, componentId) {
-    page.then(function(page) {
+var renderPage = function(getPagePromise, componentId) {
+    getPagePromise.then(function(page) {
         console.log('Page loaded');
         var scale = 1.5;
         var viewport = page.getViewport(scale);
