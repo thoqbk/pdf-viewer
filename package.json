@@ -1,0 +1,11 @@
+{
+  "name": "pdf-viewer",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
